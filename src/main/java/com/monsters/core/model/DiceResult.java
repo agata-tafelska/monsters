@@ -4,7 +4,7 @@ public class DiceResult {
     public boolean isSelected;
     public DiceResultType type;
 
-    DiceResult(DiceResultType type) {
+    public DiceResult(DiceResultType type) {
         this.type = type;
     }
 

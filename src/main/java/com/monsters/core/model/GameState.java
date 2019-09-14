@@ -1,36 +1,24 @@
 package com.monsters.core.model;
 
-import com.monsters.core.Logger;
 
 import java.util.List;
 
 public class GameState {
 
     public List<Monster> monsters;
-    public Monster whoIsInTokyo;
     public Monster whoseTurn;
+    public Monster whoIsInTokyo;
+    public Monster whoIsNext;
+    public List<DiceResult> finalCubesResults;
 
-    public GameState(List<Monster> monsters, Monster whoIsInTokyo, Monster whoseTurn) {
+    private GameState(List<Monster> monsters) {
         this.monsters = monsters;
-        this.whoIsInTokyo = whoIsInTokyo;
-        this.whoseTurn = whoseTurn;
+        this.whoseTurn = monsters.get(0);
     }
 
-    public void printState() {
-        for (int i = 0; i < monsters.size(); i++) {
-            Logger.d("Monster " + i + ": score - " + monsters.get(i).score
-                    + ", life - " + monsters.get(i).life
-                    + ", power - " + monsters.get(i).power);
-        }
-        if (whoIsInTokyo == null) {
-            Logger.d("Monster in Tokyo: " + whoIsInTokyo);
-        } else {
-            Logger.d("Monster in Tokyo: " + whoIsInTokyo.name);
-        }
-        Logger.d("Whose turn: " + whoseTurn.name);
+    public static GameState of(List<Monster> monsters) {
+        return new GameState((monsters));
     }
-
-        
 }
 
 

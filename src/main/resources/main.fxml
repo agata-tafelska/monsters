@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.BorderPane?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.monsters.gui.UiController">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="30.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="40.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="30.0" prefWidth="100.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints percentHeight="26.0" vgrow="SOMETIMES" />
+      <RowConstraints percentHeight="37.0" vgrow="SOMETIMES" />
+      <RowConstraints percentHeight="37.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="50.0" prefWidth="175.0" />
+      <AnchorPane fx:id="board_tokyo_anchor_pane" prefHeight="276.0" prefWidth="525.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <AnchorPane layoutX="21.0" layoutY="28.0" prefHeight="240.0" prefWidth="470.0" style="-fx-background-color: #ddd;">
+               <children>
+                  <VBox fx:id="monsterInTokyo" layoutX="178.0" layoutY="28.0" prefHeight="185.0" prefWidth="115.0">
+                     <children>
+                        <Label fx:id="monsterInTokyoName" alignment="CENTER" prefHeight="50.0" prefWidth="126.0" style="-fx-background-color: #bbb;" />
+                        <Label fx:id="monsterInTokyoScore" alignment="CENTER" prefHeight="50.0" prefWidth="126.0" style="-fx-background-color: #eee;" />
+                        <Label fx:id="monsterInTokyoLife" alignment="CENTER" prefHeight="50.0" prefWidth="126.0" style="-fx-background-color: #bbb;" />
+                        <Label fx:id="monsterInTokyoPower" alignment="CENTER" prefHeight="50.0" prefWidth="126.0" style="-fx-background-color: #eee;" />
+                     </children>
+                  </VBox>
+                  <Label layoutX="14.0" layoutY="14.0" text="Tokyo" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+         <children>
+            <Label fx:id="onGameFinishedLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="106.0" layoutY="21.0" prefHeight="50.0" prefWidth="300.0" text="Label" />
+            <GridPane layoutX="46.0" layoutY="85.0" prefHeight="55.0" prefWidth="420.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <ToggleButton fx:id="cube_0_button" alignment="CENTER" layoutX="5.0" layoutY="15.0" mnemonicParsing="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+                     <children>
+                        <ToggleButton fx:id="cube_1_button" layoutX="5.0" layoutY="15.0" mnemonicParsing="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2">
+                     <children>
+                        <ToggleButton fx:id="cube_2_button" layoutX="5.0" layoutY="15.0" mnemonicParsing="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3">
+                     <children>
+                        <ToggleButton fx:id="cube_3_button" layoutX="5.0" layoutY="15.0" mnemonicParsing="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4">
+                     <children>
+                        <ToggleButton fx:id="cube_4_button" layoutX="5.0" layoutY="15.0" mnemonicParsing="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="5">
+                     <children>
+                        <ToggleButton fx:id="cube_5_button" layoutX="5.0" layoutY="15.0" mnemonicParsing="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </GridPane>
+            <Button fx:id="playTurnButton" layoutX="217.0" layoutY="179.0" mnemonicParsing="false" onAction="#onPlayTurnClicked" text="Play turn" AnchorPane.leftAnchor="214.0" AnchorPane.rightAnchor="214.0" />
+            <Button fx:id="startGameButton" layoutX="210.0" layoutY="30.0" mnemonicParsing="false" onAction="#onStartGameClicked" text="Start game" AnchorPane.leftAnchor="205.0" AnchorPane.rightAnchor="205.0" />
+            <Button fx:id="rollDicesButton" layoutX="215.0" layoutY="151.0" mnemonicParsing="false" onAction="#onRollDicesClicked" text="Roll dices" AnchorPane.leftAnchor="214.0" AnchorPane.rightAnchor="214.0" />
+            <Label fx:id="finalResultLabel" alignment="CENTER" layoutX="219.0" layoutY="60.0" text="Final result:" AnchorPane.leftAnchor="218.0" AnchorPane.rightAnchor="218.0" />
+            <Button fx:id="startNewGameButton" layoutX="189.0" layoutY="164.0" mnemonicParsing="false" onAction="#onStartNewGameClicked" prefHeight="30.0" prefWidth="135.0" text="Start new game" AnchorPane.leftAnchor="190.0" AnchorPane.rightAnchor="190.0" />
+            <ToggleButton fx:id="dodatkowaGlowa2" alignment="CENTER" layoutX="-24.0" layoutY="85.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="70.0" />
+            <ToggleButton fx:id="dodatkowaGlowa1" alignment="CENTER" layoutX="466.0" layoutY="85.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="70.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+         <children>
+            <VBox fx:id="monster_1" layoutX="255.0" layoutY="56.0" prefHeight="185.0" prefWidth="115.0">
+               <children>
+                  <Label fx:id="monsterOneName" alignment="CENTER" prefHeight="50.0" prefWidth="136.0" style="-fx-background-color: #bbb;" text="monster name" />
+                  <Label fx:id="monsterOneScore" alignment="CENTER" prefHeight="50.0" prefWidth="136.0" style="-fx-background-color: #eee;" text="score" />
+                  <Label fx:id="monsterOneLife" alignment="CENTER" prefHeight="50.0" prefWidth="136.0" style="-fx-background-color: #bbb;" text="life" />
+                  <Label fx:id="monsterOnePower" alignment="CENTER" prefHeight="50.0" prefWidth="136.0" style="-fx-background-color: #eee;" text="power" />
+               </children>
+            </VBox>
+            <Accordion layoutX="32.0" layoutY="67.0" />
+            <Accordion layoutX="32.0" layoutY="84.0" />
+            <ScrollPane fx:id="monsterOneCardOnePane" layoutX="42.0" layoutY="49.0" prefHeight="50.0" prefWidth="175.0">
+               <content>
+                  <Label fx:id="monsterOneCardOneLabel" alignment="TOP_LEFT" prefHeight="100.0" prefWidth="158.0" text="Label" />
+               </content>
+            </ScrollPane>
+            <ScrollPane fx:id="monsterOneCardTwoPane" layoutX="42.0" layoutY="99.0" prefHeight="50.0" prefWidth="175.0">
+               <content>
+                  <Label fx:id="monsterOneCardTwoLabel" alignment="TOP_LEFT" prefHeight="100.0" prefWidth="158.0" text="Label" />
+               </content>
+            </ScrollPane>
+            <ScrollPane fx:id="monsterOneCardThreePane" layoutX="42.0" layoutY="149.0" prefHeight="50.0" prefWidth="175.0">
+               <content>
+                  <Label fx:id="monsterOneCardThreeLabel" alignment="TOP_LEFT" prefHeight="100.0" prefWidth="158.0" text="Label" />
+               </content>
+            </ScrollPane>
+            <ScrollPane fx:id="monsterOneCardFourPane" layoutX="42.0" layoutY="199.0" prefHeight="50.0" prefWidth="175.0">
+               <content>
+                  <Label fx:id="monsterOneCardFourLabel" alignment="TOP_LEFT" prefHeight="100.0" prefWidth="158.0" text="Label" />
+               </content>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+         <children>
+            <VBox fx:id="monster_2" layoutX="14.0" layoutY="56.0" prefHeight="185.0" prefWidth="115.0">
+               <children>
+                  <Label fx:id="monsterTwoName" alignment="CENTER" prefHeight="50.0" prefWidth="136.0" style="-fx-background-color: #bbb;" text="monster name" />
+                  <Label fx:id="monsterTwoScore" alignment="CENTER" prefHeight="50.0" prefWidth="136.0" style="-fx-background-color: #eee;" text="score" />
+                  <Label fx:id="monsterTwoLife" alignment="CENTER" prefHeight="50.0" prefWidth="136.0" style="-fx-background-color: #bbb;" text="life" />
+                  <Label fx:id="monsterTwoPower" alignment="CENTER" prefHeight="50.0" prefWidth="136.0" style="-fx-background-color: #eee;" text="power" />
+               </children>
+            </VBox>
+            <ScrollPane fx:id="monsterTwoCardOnePane" layoutX="178.0" layoutY="50.0" prefHeight="50.0" prefWidth="175.0">
+               <content>
+                  <Label fx:id="monsterTwoCardOneLabel" alignment="TOP_LEFT" prefHeight="100.0" prefWidth="158.0" text="Label" />
+               </content>
+            </ScrollPane>
+            <ScrollPane fx:id="monsterTwoCardTwoPane" layoutX="178.0" layoutY="100.0" prefHeight="50.0" prefWidth="175.0">
+               <content>
+                  <Label fx:id="monsterTwoCardTwoLabel" alignment="TOP_LEFT" prefHeight="100.0" prefWidth="158.0" text="Label" />
+               </content>
+            </ScrollPane>
+            <ScrollPane fx:id="monsterTwoCardThreePane" layoutX="178.0" layoutY="148.0" prefHeight="50.0" prefWidth="175.0">
+               <content>
+                  <Label fx:id="monsterTwoCardThreeLabel" alignment="TOP_LEFT" prefHeight="100.0" prefWidth="158.0" text="Label" />
+               </content>
+            </ScrollPane>
+            <ScrollPane fx:id="monsterTwoCardFourPane" layoutX="178.0" layoutY="198.0" prefHeight="50.0" prefWidth="175.0">
+               <content>
+                  <Label fx:id="monsterTwoCardFourLabel" alignment="TOP_LEFT" prefHeight="100.0" prefWidth="158.0" text="Label" />
+               </content>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <children>
+            <VBox fx:id="monster_3" layoutX="199.0" layoutY="14.0" prefHeight="185.0" prefWidth="115.0">
+               <children>
+                  <Label fx:id="monsterThreeName" alignment="CENTER" prefHeight="50.0" prefWidth="136.0" style="-fx-background-color: #bbb;" text="monster name" />
+                  <Label fx:id="monsterThreeScore" alignment="CENTER" prefHeight="50.0" prefWidth="136.0" style="-fx-background-color: #eee;" text="score" />
+                  <Label fx:id="monsterThreeLife" alignment="CENTER" prefHeight="50.0" prefWidth="136.0" style="-fx-background-color: #bbb;" text="life" />
+                  <Label fx:id="monsterThreePower" alignment="CENTER" prefHeight="50.0" prefWidth="136.0" style="-fx-background-color: #eee;" text="power" />
+               </children>
+            </VBox>
+            <ScrollPane fx:id="monsterThreeCardOnePane" layoutX="-14.0" layoutY="14.0" prefHeight="50.0" prefWidth="175.0">
+               <content>
+                  <Label fx:id="monsterThreeCardOneLabel" alignment="TOP_LEFT" prefHeight="100.0" prefWidth="158.0" text="Label" />
+               </content>
+            </ScrollPane>
+            <ScrollPane fx:id="monsterThreeCardTwoPane" layoutX="-14.0" layoutY="64.0" prefHeight="50.0" prefWidth="175.0">
+               <content>
+                  <Label fx:id="monsterThreeCardTwoLabel" alignment="TOP_LEFT" prefHeight="100.0" prefWidth="158.0" text="Label" />
+               </content>
+            </ScrollPane>
+            <ScrollPane fx:id="monsterThreeCardThreePane" layoutX="-14.0" layoutY="114.0" prefHeight="50.0" prefWidth="175.0">
+               <content>
+                  <Label fx:id="monsterThreeCardThreeLabel" alignment="TOP_LEFT" prefHeight="100.0" prefWidth="158.0" text="Label" />
+               </content>
+            </ScrollPane>
+            <ScrollPane fx:id="monsterThreeCardFourPane" layoutX="-14.0" layoutY="164.0" prefHeight="50.0" prefWidth="175.0">
+               <content>
+                  <Label fx:id="monsterThreeCardFourLabel" alignment="TOP_LEFT" prefHeight="100.0" prefWidth="158.0" text="Label" />
+               </content>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="whoseTurn" layoutX="80.0" layoutY="64.0" prefHeight="30.0" prefWidth="200.0" text="Label" />
+            <Label fx:id="rollCount" layoutX="80.0" layoutY="98.0" prefHeight="30.0" prefWidth="200.0" text="Label" />
+            <Label fx:id="turnFinishedLabel" layoutX="80.0" layoutY="128.0" prefHeight="30.0" prefWidth="200.0" text="Label" />
+            <Button fx:id="nextPlayerButton" layoutX="80.0" layoutY="165.0" mnemonicParsing="false" onAction="#onNextPlayerButtonClicked" text="Next player" />
+            <Label fx:id="monsterFinishedGame" layoutX="80.0" layoutY="34.0" prefHeight="30.0" prefWidth="200.0" text="Label" />
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2">
+         <children>
+            <Label fx:id="exitCityQuestion" alignment="CENTER" layoutX="73.0" layoutY="59.0" prefHeight="72.0" prefWidth="200.0" text="Does monster..." />
+            <Button fx:id="exitTokyoYes" layoutX="113.0" layoutY="130.0" mnemonicParsing="false" prefWidth="60.0" text="Yes" />
+            <Button fx:id="exitTokyoNo" layoutX="180.0" layoutY="130.0" mnemonicParsing="false" prefWidth="60.0" text="No" />
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+         <children>
+            <VBox fx:id="cardsVBox" layoutX="31.0" layoutY="33.0" prefHeight="210.0" prefWidth="230.0">
+               <children>
+                  <ScrollPane fx:id="firstCardPane" prefHeight="70.0" prefWidth="230.0">
+                     <content>
+                        <Label fx:id="firstCardLabel" alignment="TOP_LEFT" prefHeight="120.0" prefWidth="212.0" style="-fx-background-color: #bbb;" text="Label" />
+                     </content>
+                  </ScrollPane>
+                  <ScrollPane fx:id="secondCardPane" prefHeight="70.0" prefWidth="230.0">
+                     <content>
+                        <Label fx:id="secondCardLabel" alignment="TOP_LEFT" prefHeight="120.0" prefWidth="212.0" style="-fx-background-color: #ddd;" text="Label" />
+                     </content>
+                  </ScrollPane>
+                  <ScrollPane fx:id="thirdCardPane" prefHeight="70.0" prefWidth="230.0">
+                     <content>
+                        <Label fx:id="thirdCardLabel" alignment="TOP_LEFT" prefHeight="120.0" prefWidth="212.0" style="-fx-background-color: #bbb;" text="Label" />
+                     </content>
+                  </ScrollPane>
+               </children>
+            </VBox>
+            <Button fx:id="buyFirstCardButton" layoutX="269.0" layoutY="51.0" mnemonicParsing="false" text="Buy" />
+            <Button fx:id="buySecondCardButton" layoutX="269.0" layoutY="123.0" mnemonicParsing="false" text="Buy" />
+            <Button fx:id="buyThirdCardButton" layoutX="269.0" layoutY="189.0" mnemonicParsing="false" text="Buy" />
+            <Label fx:id="buyingCardQuestionLabel" alignment="CENTER" layoutX="72.0" layoutY="-5.0" prefHeight="38.0" prefWidth="241.0" text="Do you want to buy any card?" />
+            <Button fx:id="shuffleCardsButton" layoutX="269.0" layoutY="243.0" mnemonicParsing="false" onAction="#onShuffleCardsButtonClicked" text="Shuffle cards" />
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2" />
+   </children>
+</GridPane>
